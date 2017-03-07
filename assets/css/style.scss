@@ -21,8 +21,26 @@ body {
 }
 
 #site-nav {
-	
+	width:             75%;
+	float:             right;
 	background-color:  #ccff00;
+}
+#site-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+#navigation li {
+    float: left;
+}
+#navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 #body-wrapper {
