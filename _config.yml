@@ -1,1 +1,7 @@
+# Website Settings
+title: "Chelli Miller"
+description: "Computer Engineering Student"
 theme: jekyll-theme-slate
+
+# Build Settings
+exclude: [README.md]
