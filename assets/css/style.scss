@@ -26,20 +26,20 @@ body {
 	background-color:  #ffffff;
 }
 #site-nav ul {
-    list-style-type:       none;
-    margin:                0;
-    padding:               0;
-    overflow:              hidden;
+	list-style-type:   none;
+	margin:            0;
+	padding:           0;
+	overflow:          hidden;
 }
 #site-nav li {
-    float:                 left;
-    padding:           1%;
+	float:             left;
 }
 #site-nav li a {
-    display:               block;
-    color:                 #000000;
-    text-align:            center;
-    text-decoration:       none;
+	display:           block;
+	color:             #000000;
+	text-align:        center;
+	padding:           1%;
+	text-decoration:   none;
 }
 
 #body-wrapper {
