@@ -1,7 +1,8 @@
 # Website Settings
 title: "Chelli Miller"
 description: "Computer Engineering Student"
-theme: jekyll-theme-slate
 
 # Build Settings
+markdown: kramdown
+theme: minima
 exclude: [README.md]
