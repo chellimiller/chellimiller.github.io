@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset='utf-8'>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<meta name="viewport" content="width=device-width,maximum-scale=2">
-		<meta name="description" content="{{ site.title | default: site.github.repository_name }} : {{ site.description | default: site.github.project_tagline }}">
-		
-		<link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-		
-		<title>{{ site.title | default: site.github.repository_name }}</title>
-	</head>
-	<body>
-		<!-- HEADER -->
-		<div id="header-wrapper">
-			<div id="site-title">{{ site.title | default: site.github.repository_name }}</div>
-			<div id="site-nav"></div>
-		</div>
-		
-		<!-- CONTENT -->
-		<div id="body-wrapper">
-			{{ content }}
-		</div>
-	</body>
-</html>
+{% include header.html %}
+
+<!-- CONTENT -->
+<div id="body-wrapper">
+	{{ content }}
+</div>
+
+{% include footer.html %}
