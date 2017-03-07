@@ -4,25 +4,25 @@
 @import "{{ site.theme }}";
 
 body {
-	background-color:  #FF66dd;
+	background-color:  #FFFFFF;
+	color:             #000000;
 }
 
 #hwrap {
-	background-color:  #11ff44;
-	padding-top:       10%;
-	padding-left:      5%;
-	padding-right:     5%;
+	background-color:  #333333;
+	padding:           5%;
+	border-bottom:     thick solid #EF233C;
 }
 
 #site-title {
-	background-color:  #111434;
+	color:             #FFFFFF;
+	font-size:         200%;
 	padding:           1%;
 	text-align:        center;
 }
 
 #site-nav {
 	width:             100%;
-	background-color:  #ffffff;
 }
 #site-nav ul {
 	list-style-type:   none;
@@ -32,17 +32,28 @@ body {
 }
 #site-nav li {
 	float:             left;
+	font-weight:       bold;
 }
 #site-nav li a {
 	display:           block;
-	color:             #000000;
+	color:             #FFFFFF;
 	text-align:        center;
-	padding:           3px;
+	padding:           2%;
 	text-decoration:   none;
 }
 
+#site-nav li a:hover {
+	background-color: #FF495F;
+	color:            #000000;
+	
+}
+
+#site-nav li a:active {
+	background-color: #EF233C;
+	color:            #000000;
+}
+
 #body-wrapper {
-	background-color:  #4422ff;
 	margin:            5%;
 	margin-top:        2%;
 }
