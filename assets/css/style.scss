@@ -5,12 +5,13 @@
 
 body {
 	background-color:  #FF66dd;
-	padding:           10%;
-	padding-top:       15%;
 }
 
 #header-wrapper {
 	background-color:  #11ff44;
+	padding-top:       15%;
+	padding-left:      5%;
+	padding-right:     5%;
 }
 
 #site-title {
@@ -24,4 +25,9 @@ body {
 	float:             right;
 	
 	background-color:  #ccff00;
+}
+
+#body-wrapper {
+	background-color:  #4422ff;
+	margin:            5%;
 }
