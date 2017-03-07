@@ -24,7 +24,6 @@ body {
 #site-nav {
 	width:             100%;
 	background-color:  #ffffff;
-	padding:           1%;
 }
 #site-nav ul {
     list-style-type:       none;
@@ -34,6 +33,7 @@ body {
 }
 #site-nav li {
     float:                 left;
+    padding:           1%;
 }
 #site-nav li a {
     display:               block;
