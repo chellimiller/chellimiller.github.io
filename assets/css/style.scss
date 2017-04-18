@@ -16,6 +16,9 @@ body {
 	display:             flex;
 	min-height:          100vh;
 	flex-direction:      column;
+	
+	padding:             0;
+	margin:              0;
 } header, footer {
 	width:               100%;
 	height:              auto;
@@ -40,9 +43,11 @@ header #title {
 	width:               25%;
 } header #tagline {
 	visibility:          hidden;
+	position:            absolute;
 } header nav {
 	display:             inline-block;
 	width:               70%;
+	float:               right;
 } header nav a {
 	display:             inline-block;
 	padding:             .5em .75em;
@@ -61,6 +66,7 @@ header #title {
 
 .chemil-sidebar {
 	visibility:          hidden;
+	position:            absolute;
 }
 
 footer {
