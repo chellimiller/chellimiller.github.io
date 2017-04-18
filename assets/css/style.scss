@@ -8,16 +8,17 @@
 	Red     - #E80017 - rgba(232, 0, 23, 1)
 */
 
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
 body {
 	background:          #FFFFFF;
-	font-family:         "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family:         "Courier New", Courier, monospace;
 	font-size:           100%;
 	padding:             0;
 	margin:              0;
 } header, footer {
 	width:               100%;
 	height:              auto;
-	background:          rgba(0, 0, 0, 1);
 } header {
 	position:            relative;
 	top:                 0;
@@ -30,12 +31,15 @@ body {
 	text-decoration:     none;
 }
 
-header #title {
+header {
+	text-align:          center;
+} header #title {
 	display:             block;
 	color:               #E80017;
 	padding:             .25em;
 	font-size:           3em;
 	font-weight:         bold;
+	font-family:         'Great Vibes', cursive;
 } header #tagline {
 	visibility:          hidden;
 	position:            absolute;
@@ -44,25 +48,21 @@ header #title {
 } header nav a {
 	display:             inline-block;
 	padding:             .5em .75em;
+	margin:              .5em;
 	min-width:           3.25em;
-	background:          #564D4D;
-	color:               #FFFFFF;
+	color:               #E80017;
 	font-weight:         bold;
 	text-align:          center;
 	font-size:           1em;
-	border-left:         .25em solid #E80017;
 } header nav a:hover {
-	background:          #FFFFFF;
-	color:               #E80017;
-	border-left:         .25em solid #FFFFFF;
+	background:          #564D4D;
+	color:               #FFFFFF;
 }
 
 .chemil-sidebar {
 	visibility:          hidden;
 	position:            absolute;
-}
-
-footer {
+} footer {
 	visibility:          hidden;
 	position:            absolute;
 }
