@@ -17,7 +17,7 @@ body {
 } header, footer {
 	width:               100%;
 	height:              auto;
-	background:          rgba(0, 0, 0, .75);
+	background:          rgba(0, 0, 0, 1);
 } header {
 	position:            relative;
 	top:                 0;
@@ -34,7 +34,7 @@ header #title {
 	display:             block;
 	color:               #E80017;
 	padding:             .25em;
-	font-size:           1.5em;
+	font-size:           3em;
 	font-weight:         bold;
 } header #tagline {
 	visibility:          hidden;
@@ -45,7 +45,7 @@ header #title {
 	display:             inline-block;
 	padding:             .5em .75em;
 	min-width:           3.25em;
-	background:          #000000;
+	background:          #564D4D;
 	color:               #FFFFFF;
 	font-weight:         bold;
 	text-align:          center;
@@ -54,7 +54,7 @@ header #title {
 } header nav a:hover {
 	background:          #FFFFFF;
 	color:               #E80017;
-	border-left:         .25em solid #564D4D;
+	border-left:         .25em solid #FFFFFF;
 }
 
 .chemil-sidebar {
