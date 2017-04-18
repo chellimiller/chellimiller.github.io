@@ -12,7 +12,7 @@
 
 body {
 	background:          #FFFFFF;
-	font-family:         "Courier New", Courier, monospace;
+	font-family:         "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size:           100%;
 	padding:             0;
 	margin:              0;
@@ -21,7 +21,7 @@ body {
 	height:              auto;
 } header {
 	position:            relative;
-	top:                 0;
+	top:                 .5em;
 	left:                0;
 } main {
 	flex:                1;
@@ -50,13 +50,12 @@ header {
 	padding:             .5em .75em;
 	margin:              .5em;
 	min-width:           3.25em;
-	color:               #E80017;
+	color:               #564D4D;
 	font-weight:         bold;
 	text-align:          center;
 	font-size:           1em;
 } header nav a:hover {
-	background:          #564D4D;
-	color:               #FFFFFF;
+	color:               #E80017;
 }
 
 .chemil-sidebar {
