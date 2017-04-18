@@ -16,6 +16,7 @@ body {
 	font-size:           100%;
 	padding:             0;
 	margin:              0;
+	text-align:          center;
 } header, footer {
 	width:               100%;
 	height:              auto;
@@ -26,6 +27,7 @@ body {
 } main {
 	flex:                1;
 	padding:             1em;
+	position:            relative;
 } a {
 	color:               inherit;
 	text-decoration:     none;
