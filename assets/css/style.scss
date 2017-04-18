@@ -1,0 +1,80 @@
+---
+---
+
+/* Website Colors
+	Grey    - #564D4D - rgba(86, 77, 77, 1)
+	White   - #FFFFFF - rgba(255, 255, 255, 1)
+	Black   - #000000 - rgba(0, 0, 0, 1)
+	Red     - #E80017 - rgba(232, 0, 23, 1)
+*/
+
+body {
+	background:          #FFFFFF;
+	font-family:         "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:           100%;
+	
+	display:             flex;
+	min-height:          100vh;
+	flex-direction:      column;
+} header, footer {
+	width:               100%;
+	height:              auto;
+	background:          rgba(0, 0, 0, .75);
+} header {
+	position:            relative;
+	top:                 0;
+	left:                0;
+} main {
+	flex:                1;
+	padding:             1em;
+} a {
+	color:               inherit;
+	text-decoration:     none;
+}
+
+header #title {
+	display:             inline-block;
+	color:               #E80017;
+	padding:             .25em;
+	font-size:           1.5em;
+	width:               25%;
+} header #tagline {
+	visibility:          hidden;
+} header nav {
+	display:             inline-block;
+	width:               70%;
+} header nav a {
+	display:             inline-block;
+	padding:             .5em .75em;
+	min-width:           3.25em;
+	background:          #000000;
+	color:               #FFFFFF;
+	font-weight:         bold;
+	text-align:          center;
+	font-size:           1em;
+	border-left:         .25em solid #E80017;
+} header nav a:hover {
+	background:          #FFFFFF;
+	color:               #E80017;
+	border-left:         .25em solid #564D4D;
+}
+
+.chemil-sidebar {
+	visibility:          hidden;
+}
+
+footer {
+	padding:             1em;
+	text-align:          center;
+} footer nav a {
+	display:             inline-block;
+	padding:             .5em .75em;
+	min-width:           3.25em;
+	color:               #FFFFFF;
+	font-weight:         bold;
+	text-align:          center;
+	font-size:           1em;
+} footer nav a:hover {
+	background:          #E80017;
+	color:               #FFFFFF;
+}
