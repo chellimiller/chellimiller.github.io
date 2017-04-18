@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+	{% include header.html %}
+	<main class="page-content" aria-label="Content">
+		<style>
+		.chemil-about {
+			width: 90%;
+			display: block;
+			background: black;
+			margin: 5%;
+		} .chemil-about img {
+			vertical-align: middle;
+			width: 40%;
+			height: auto;
+			border: .25em solid #E80017;
+		} .chemil-about span {
+			color: white;
+			display: inline-block;
+			vertical-align: middle;
+			width: 50%;
+			margin: 2.5%;
+		}
+		</style>
+		<section class="chemil-about">
+			<img src={% include profile.jpg %} alt="I'm hiding" />
+			<span>{{ content }}</span>
+		</section>
+		<nav>{% include nav-social.html %}</nav>
+	</main>
+    {% include footer.html %}
+</body>
+</html>
