@@ -25,9 +25,8 @@ body {
 	top:                 0;
 	left:                0;
 } main {
-	flex:                1;
-	padding:             1em;
 	position:            relative;
+	display:             inline-block;
 } a {
 	color:               inherit;
 	text-decoration:     none;
