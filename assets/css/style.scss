@@ -31,19 +31,16 @@ body {
 }
 
 header #title {
-	display:             inline-block;
+	display:             block;
 	color:               #E80017;
 	padding:             .25em;
 	font-size:           1.5em;
 	font-weight:         bold;
-	width:               25%;
 } header #tagline {
 	visibility:          hidden;
 	position:            absolute;
 } header nav {
-	display:             inline-block;
-	width:               70%;
-	float:               right;
+	display:             block;
 } header nav a {
 	display:             inline-block;
 	padding:             .5em .75em;
