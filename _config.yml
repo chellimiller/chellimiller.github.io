@@ -4,5 +4,5 @@ description: "Computer Engineering Student"
 
 # Build Settings
 markdown: kramdown
-theme: minima
+theme: slate
 exclude: [README.md]
