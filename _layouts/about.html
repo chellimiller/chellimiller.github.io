@@ -5,6 +5,9 @@ layout: default
 .chemil-about {
 	width: 100%;
 	display: block;
+	text-align: center;
+} .chemil-about div {
+	max-width: 18em;
 } .chemil-about img {
 	vertical-align: middle;
 	width: 40%;
@@ -18,6 +21,7 @@ layout: default
 	width: 100%;
 	display: block;
 	text-align: center;
+	margin: 2em;
 } #main-social span {
 	display: inline-block;
 	color: #E80017;
@@ -36,7 +40,9 @@ layout: default
 }
 </style>
 <section class="chemil-about">
-	<img src="http://pangoli.com/photos/profile.jpg" />
-	<span>{{ content }}</span>
+	<div class="center">
+		<img src="http://pangoli.com/photos/profile.jpg" />
+		<span>{{ content }}</span>
+	</div>
 </section>
 <nav id="main-social"><span>Find Me On:</span> {% include nav-social.html %}</nav>
