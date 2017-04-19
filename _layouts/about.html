@@ -3,25 +3,40 @@ layout: default
 ---
 <style>
 .chemil-about {
-	width: 90%;
+	width: 100%;
 	display: block;
-	background: black;
-	margin: 5%;
 } .chemil-about img {
 	vertical-align: middle;
 	width: 40%;
 	height: auto;
-	border: .25em solid #E80017;
 } .chemil-about span {
-	color: white;
 	display: inline-block;
 	vertical-align: middle;
 	width: 50%;
 	margin: 2.5%;
+} #main-social {
+	width: 100%;
+	display: block;
+	text-align: center;
+} #main-social span {
+	display: inline-block;
+	color: #E80017;
+	font-weight: bold;
+} #main-social a {
+	color: #FFFFFF;
+	background: #000000;
+	padding: .5em;
+	margin: .25em;
+	display: inline-block;
+} #main-social a:hover {
+	border-left: .25em solid #E80017;
+	padding: .5em;
+	margin: .25em;
+	margin-left: 0;
 }
 </style>
 <section class="chemil-about">
 	<img src="http://pangoli.com/photos/profile.jpg" />
 	<span>{{ content }}</span>
 </section>
-<nav>{% include nav-social.html %}</nav>
+<nav id="main-social"><span>Find Me On:</span> {% include nav-social.html %}</nav>
