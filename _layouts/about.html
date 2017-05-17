@@ -8,7 +8,6 @@ layout: default
 } .chemil-about div {
 	width: 80%;
 	margin: 0% 10%;
-	text-align: center;
 } .chemil-about img {
 	vertical-align: middle;
 	width: 40%;
@@ -41,6 +40,8 @@ layout: default
 	padding: .5em;
 	margin: .25em;
 	margin-left: 0;
+} .center {
+	text-align: center;
 }
 </style>
 <section class="chemil-about">
@@ -49,4 +50,6 @@ layout: default
 		<span>{{ content }}</span>
 	</div>
 </section>
-<nav id="main-social"><span>Find Me On:</span> <br /> {% include nav-social.html %}</nav>
+<div class="center">
+	<nav id="main-social"><span>Find Me On:</span> <br /> {% include nav-social.html %}</nav>
+</div>
