@@ -2,56 +2,23 @@
 layout: default
 ---
 <style>
-.chemil-about {
-	width: 100%;
-	display: block;
-} .chemil-about div {
-	width: 80%;
-	margin: 0% 10%;
-} .chemil-about img {
-	vertical-align: middle;
-	width: 40%;
-	max-width: 19em;
+#about {
+	display: inline-block;
+	width: 75%;
+	max-width: 40em;
+	min-width: 20em;
+} #about img {
+	float: left;
+	width: 30%;
+	max-width: 15em;
 	min-width: 10em;
-	height: auto;
-	border: .5em solid black
-} .chemil-about span {
-	display: inline-block;
-	width: 40%;
-	max-width: 20em;
-	min-width: 10em;
-	margin: 2.5%;
-} #main-social {
+	margin-right: 1em;
+} #about div {
 	width: 100%;
-	display: block;
-	text-align: center;
-} #main-social span {
-	display: inline-block;
-	color: #E80017;
-	font-size: 2em;
-	margin-bottom: .5em;
-	font-weight: bold;
-} #main-social a {
-	color: #FFFFFF;
-	background: #000000;
-	padding: .5em;
-	margin: .25em;
-	display: inline-block;
-} #main-social a:hover {
-	border-left: .25em solid #E80017;
-	padding: .5em;
-	margin: .25em;
-	margin-left: 0;
-} .center {
-	text-align: center;
+	text-align: left;
 }
 </style>
-<section class="chemil-about">
-	<div class="center">
-		<img src="http://pangoli.com/photos/profile.jpg" /><br />
-		<span>{{ content }}</span>
-	</div>
+<section id="about">
+	<img src="img/aboutme.jpeg" />
+	<div>Hello, I’m Michelle. I’m a Computer Engineering student at the University of Wisconsin - Stout and will be graduating in 2017. In my free time I enjoy running, learning about web development, and watching Game of Thrones.</div>
 </section>
-<div class="center">
-	<nav id="main-social"><span>Find Me On:</span> <br /> {% include nav-social.html %}</nav>
-</div>
