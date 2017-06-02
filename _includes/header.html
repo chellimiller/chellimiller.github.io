@@ -1,5 +1,8 @@
-<header class="chemil-header">
-	<p id="title">{{ site.title | default: site.github.repository_name }}</p>
-	<p id="tagline">{{ site.description }}</p>
+<header>
+	<nav>{% include nav-side.html %}</nav>
+	<div id="title">
+		<h1>- {{ site.title | default: site.github.repository_name }} -</h1>
+		<p id="tagline">{{ site.description }}</p>
+	</div>
 </header>
-<nav class="chemil-sidebar">{% include nav-side.html %}</nav>
+
