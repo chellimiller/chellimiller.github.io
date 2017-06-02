@@ -1,72 +1,49 @@
 ---
 ---
 
-/* Website Colors
-	Grey    - #564D4D - rgba(86, 77, 77, 1)
-	White   - #FFFFFF - rgba(255, 255, 255, 1)
-	Black   - #000000 - rgba(0, 0, 0, 1)
-	Red     - #E80017 - rgba(232, 0, 23, 1)
-*/
-
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
-
 body {
-	background:          #FFFFFF;
-	font-family:         "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size:           100%;
-	padding:             0;
-	margin:              0;
-	text-align:          center;
-} header, footer {
-	width:               100%;
-	height:              auto;
-} header {
-	position:            relative;
-	top:                 0;
-	left:                0;
-} main {
-	position:            relative;
-	display:             inline-block;
-	width:               70%;
-	min-width:           20em;
-	text-align:          left;
+	background:      #FFFFFF;
+	font-family:     "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:       100%;
+	margin:          0% 5%;
+	width:           90%;
+	padding:         0;
+	text-align:      center;
+	color:           #000000;
 } a {
-	color:               inherit;
-	text-decoration:     none;
+	text-decoration: none;
+	color:           inherit;
+	
 }
 
+/* Header */
 header {
-	text-align:          center;
-	margin:              1em 0em;
-} header #title {
-	display:             block;
-	color:               #E80017;
-	padding:             .25em;
-	font-size:           3em;
-	font-weight:         bold;
-	font-family:         'Great Vibes', cursive;
-} header #tagline {
-	visibility:          hidden;
-	position:            absolute;
+	margin:          2em 0em;
+	width:           100%;
 } header nav {
-	display:             block;
+	text-align:      center;
+	font-size:       1.25em;
+	min-width:       10em;
+	padding:0;
+	margin:0;
+	
 } header nav a {
-	display:             inline-block;
-	padding:             .5em .75em;
-	margin:              .5em;
-	min-width:           3.25em;
-	color:               #564D4D;
-	font-weight:         bold;
-	text-align:          center;
-	font-size:           1em;
+	color:           #000000;
+	display:         inline-block;
+	margin:          .25em;
+	border-left:     .2em solid #CAEBF2;
+	padding:         0em .5em;
 } header nav a:hover {
-	color:               #E80017;
-}
-
-.chemil-sidebar {
-	visibility:          hidden;
-	position:            absolute;
-} footer {
-	visibility:          hidden;
-	position:            absolute;
+	color:           #A9A9A9;
+} header #title {
+	margin:          1em 0em;
+} header h1 {
+	font-size:       2.5em;
+	color:           #000000;
+	margin:          0;
+}  header p {
+	font-size:       1.15em;
+	color:           #333333;
+	margin:          0;
+	font-style:      italic;
 }
