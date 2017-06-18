@@ -1,49 +1,76 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+/* Base Settings and Browser Support */
 body {
-	background:      #FFFFFF;
-	font-family:     "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size:       100%;
-	margin:          0% 5%;
-	width:           90%;
-	padding:         0;
-	text-align:      center;
-	color:           #000000;
+	font-size:           calc(12px + 1vh);
+	position:            fixed;
+	left:                0;
+	right:               0;
+	top:                 0;
+	bottom:              0;
+	margin:              0;
+	padding:             0;
+	min-height:          29em;
+	min-width:           33em;
 } a {
-	text-decoration: none;
-	color:           inherit;
-	
+	color:               inherit;
+	text-decoration:     none;
+} header, nav, main, footer {
+	display:             block;
 }
 
-/* Header */
-header {
-	margin:          2em 0em;
-	width:           100%;
-} header nav {
-	text-align:      center;
-	font-size:       1.25em;
-	min-width:       10em;
-	padding:0;
-	margin:0;
-	
-} header nav a {
-	color:           #000000;
-	display:         inline-block;
-	margin:          .25em;
-	border-left:     .2em solid #CAEBF2;
-	padding:         0em .5em;
+/* Background and Colors */
+body {
+	background:          #000000 url("bg.png") top left fixed;
+	background-size:     cover;
+	background-repeat:   no-repeat;
+	color:               #FFFFFF;
+} header nav, main {
+	background:          rgba(0,0,0,.9);
+} footer, main, header nav a {
+	border-left:        .15em solid #FF0000;
 } header nav a:hover {
-	color:           #A9A9A9;
-} header #title {
-	margin:          1em 0em;
-} header h1 {
-	font-size:       2.5em;
-	color:           #000000;
-	margin:          0;
-}  header p {
-	font-size:       1.15em;
-	color:           #333333;
-	margin:          0;
-	font-style:      italic;
+	color:               #FF0000;
+}
+
+/* Font */
+body {
+	font-family: 'Droid Sans Mono', monospace;
+	text-align:  left;
+} header {
+	text-align:          center;
+} main {
+	line-height:         1.5;
+} footer a:hover {
+	text-decoration:     underline;
+}
+
+/* Display, Positioning, Padding, and Margins */
+#title {
+	visibility:          hidden;
+} header, nav, main, footer {
+	position:            absolute;
+} header, nav {
+	width:               100%;
+	height:              auto;
+	top:                 0;
+	left:                0;
+} header nav a {
+	display:             inline-block;
+	padding:             .5em .25em;
+	margin:              0 2%;
+} main {
+	width:               50%;
+	max-width:           30em;
+	padding:             .5em;
+	padding-left:        1em;
+	right:               1em;
+	bottom:              1em;
+} footer {
+	padding:             .15em;
+	left:                1em;
+	bottom:              1em;
 }
