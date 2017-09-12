@@ -4,23 +4,18 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
 
 /* Base Settings, Display, and Positioning */
-body {
-	font-size:        calc(12px + 1vh);
-	position:         fixed;
-	left:             0;
-	right:            0;
-	top:              0;
-	bottom:           0;
-	margin:           0;
-	padding:          0;
+html {
+	position:         relative;
+	min-height:       100%;
+} body, header, footer {
+	width:            100%;
 } header, nav, main, footer, section {
 	display:          inline-block;
 } main {
 	margin-bottom:    4em;
 	padding:          1em;
 } section {
-	width:            45%;
-	padding:          2%;
+	padding:          .5em;
 	min-width:        15em;
 	max-width:        25em;
 	vertical-align:   middle;
@@ -44,7 +39,9 @@ body {
 body {
 	background:       #FFFFFF;
 	color:            #000000;
-} main, footer {
+} header {
+	border-bottom:    .1em dotted #000000;
+} footer {
 	border-top:       .1em dotted #000000;
 } 
 a {
@@ -61,6 +58,7 @@ a {
 body {
 	font-family:      'Droid Sans Mono', monospace;
 	text-align:       center;
+	font-size:        calc(12px + 1vh);
 } main {
 	line-height:      1.5;
 } p {
