@@ -3,76 +3,81 @@
 
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
 
-/* Base Settings and Browser Support */
+/* Base Settings, Display, and Positioning */
 body {
-	font-size:           calc(12px + 1vh);
-	position:            fixed;
-	left:                0;
-	right:               0;
-	top:                 0;
-	bottom:              0;
-	margin:              0;
-	padding:             0;
-	min-height:          29em;
-	min-width:           33em;
-} a {
-	color:               inherit;
-	text-decoration:     none;
-} header, nav, main, footer {
-	display:             block;
+	font-size:        calc(12px + 1vh);
+	position:         fixed;
+	left:             0;
+	right:            0;
+	top:              0;
+	bottom:           0;
+	margin:           0;
+	padding:          0;
+} header, nav, main, footer, section {
+	display:          inline-block;
+} main {
+	margin-bottom:    4em;
+	padding:          1em;
+} section {
+	width:            45%;
+	padding:          2%;
+	min-width:        15em;
+	max-width:        25em;
+	vertical-align:   middle;
+} footer {
+	position:         absolute;
+	bottom:           0;
+	left:             0;
+	max-height:       4em;
+} nav {
+	padding:          1em;
+} nav a {
+	display:          inline-block;
+	padding:          .25em;
+	margin:           .25em;
+} img {
+	width:            80%;
+	max-width:        20em;
 }
 
 /* Background and Colors */
 body {
-	background:          #000000 url("bg.png") top left fixed;
-	background-size:     cover;
-	background-repeat:   no-repeat;
-	color:               #FFFFFF;
-} header nav, main {
-	background:          rgba(0,0,0,.9);
-} footer, main, header nav a {
-	border-left:        .15em solid #FF0000;
+	background:       #FFFFFF;
+	color:            #000000;
+} main, footer {
+	border-top:       .1em dotted #000000;
+} 
+a {
+	color:            inherit;
+} nav a:hover, #hello {
+	color:            #FF0000;
+} header nav a {
+	border-left:     .15em solid #FF0000;
 } header nav a:hover {
-	color:               #FF0000;
+	border-left:     .15em solid #000000;
 }
 
 /* Font */
 body {
-	font-family: 'Droid Sans Mono', monospace;
-	text-align:  left;
-} header {
-	text-align:          center;
+	font-family:      'Droid Sans Mono', monospace;
+	text-align:       center;
 } main {
-	line-height:         1.5;
-} main h1 {
-	font-size:           1.5em;
-} footer a:hover {
-	text-decoration:     underline;
-}
-
-/* Display, Positioning, Padding, and Margins */
-#title {
-	visibility:          hidden;
-} header, nav, main, footer {
-	position:            absolute;
-} header, nav {
-	width:               100%;
-	height:              auto;
-	top:                 0;
-	left:                0;
-} header nav a {
-	display:             inline-block;
-	padding:             .5em .25em;
-	margin:              0 2%;
-} main {
-	width:               50%;
-	max-width:           30em;
-	padding:             .5em;
-	padding-left:        1em;
-	right:               1em;
-	bottom:              1em;
-} footer {
-	padding:             .15em;
-	left:                1em;
-	bottom:              1em;
+	line-height:      1.5;
+} p {
+	text-align:       left;
+	padding:          .5em;
+} #hello 
+	font-weight:      bold;
+	font-style:       italic;
+	font-size:        1.25em;
+	color:            #FF0000;
+} h1, h2 {
+	padding:          .25em;
+} h1 {
+	font-weight:      bold;
+	font-size:        1.25em;
+} nav a {
+	font-size:       .9em;
+} footer a:hover, header a {
+	text-decoration:    none;
 }
