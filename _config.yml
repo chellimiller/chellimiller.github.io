@@ -2,6 +2,8 @@
 title: "Michelle Miller"
 description: "Software Engineer"
 
+repository: chellimiller.github.io/chellimiller.github.io
+
 # Build Settings
 markdown: kramdown
 theme: jekyll-theme-slate
