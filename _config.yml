@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -18,22 +18,36 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Michelle Miller
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The personal website of Michelle Miller.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+# Content
+content:
+  ## Social media links
+  social:
+    blog: http://blog.michellemiller.io/
+    github: https://github.com/chellimiller/
+    linkedin: https://www.linkedin.com/in/chellicmiller/
+    stackoverflow: https://stackoverflow.com/users/6832300/michelle-miller
+    codesignal: https://app.codesignal.com/profile/chelli_m
+    instructables: https://www.instructables.com/member/chellicmiller/
+    freelancer: https://www.freelancer.com/u/ChelliMiller
+  about:
+    image:
+      url: /assets/img/self-profile.png
+      alt: It's me!
+    title: Hello, I'm Michelle
+    content: >-
+      I'm a software engineer living in Phoenix, Arizona.
+      In my free time, I'm often working on personal projects or doing home repairs.
+      I'm a huge fan of Star Wars and bad TV shows.
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

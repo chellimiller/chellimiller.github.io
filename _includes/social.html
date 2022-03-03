@@ -1,0 +1,41 @@
+{% if site.content.social.size > 0 %}
+<nav class="social">
+
+  <label>Find Me:</label>
+
+  {% for social in site.content.social %}
+
+  {% case social[0] %}
+  {% when "blog" %}
+  <a href="{{ social[1] }}">
+    <i class="icon logo">
+      <img src="/assets/icons/journal-text.svg" alt="Blog" />
+    </i>
+    <label>Blog</label>
+  </a>
+  {% when "github" %}
+  <a href="{{ social[1] }}">
+    <i class="icon logo">
+      <img src="/assets/icons/github.svg" alt="GitHub" />
+    </i>
+    <label>GitHub</label>
+  </a>
+  {% when "linkedin" %}
+  <a href="{{ social[1] }}">
+    <i class="icon logo">
+      <img src="/assets/icons/linkedin.svg" alt="LinkedIn" />
+    </i>
+    <label>LinkedIn</label>
+  </a>
+  {% when "stackoverflow" %}
+  <a href="{{ social[1] }}">
+    <i class="icon logo">
+      <img src="/assets/icons/stack-overflow.svg" alt="StackOverflow" />
+    </i>
+    <label>StackOverflow</label>
+  </a>
+  {% endcase %}
+
+  {% endfor %}
+</nav>
+{% endif %}
