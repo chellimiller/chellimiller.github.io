@@ -28,7 +28,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 content:
   ## Social media links
   social:
-    blog: http://blog.michellemiller.io/
+    blog: /blog
     github: https://github.com/chellimiller/
     linkedin: https://www.linkedin.com/in/chellicmiller/
     stackoverflow: https://stackoverflow.com/users/6832300/michelle-miller
@@ -44,6 +44,19 @@ content:
       I'm a software engineer living in Phoenix, Arizona.
       In my free time, I'm often working on personal projects or doing home repairs.
       I'm a huge fan of Star Wars and bad TV shows.
+
+defaults:
+  - scope:
+      path: "blog"
+      type: "posts"
+    values:
+      permalink: /:categories/:slug
+      layout: blog-post
+  - scope:
+      path: "blog"
+      type: "pages"
+    values:
+      layout: blog-page
 
 # Build settings
 plugins:

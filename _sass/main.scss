@@ -1,3 +1,5 @@
+// @todo Break this out and only load when relevant
+
 body {
   position: absolute;
   top: 0;
@@ -30,7 +32,6 @@ body {
     display: flex;
     flex-grow: 1;
     overflow: auto;
-    padding: 2rem;
   }
 
   & > footer {
@@ -52,14 +53,30 @@ body {
   align-items: center;
 }
 
+.post {
+  margin: 2rem;
+  padding-bottom: 3rem;
+}
+
+.page,
 .about {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  padding: 2rem;
+}
+
+.page {
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about {
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 
   .image {
     min-height: 20rem;
