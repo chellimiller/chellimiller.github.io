@@ -1,0 +1,17 @@
+{
+  "name": "@chellicmiller/personal-website-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "author": "",
+  "dependencies": {
+    "hashids": "^2.2.10"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
