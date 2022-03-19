@@ -9,6 +9,7 @@
   },
   "author": "",
   "dependencies": {
+    "front-matter": "^4.0.2",
     "hashids": "^2.2.10"
   },
   "devDependencies": {

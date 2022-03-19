@@ -1,4 +1,10 @@
-const {toNumberish, parseTitle, parseDate, generatePostId} = require("./index");
+const {
+  toNumberish,
+  parseTitle,
+  parseDate,
+  generatePostId,
+  generateCorrectMarkdown,
+} = require("./util");
 
 describe("parseTitle", () => {
   it("should remove date", () => {
@@ -60,5 +66,30 @@ describe("generatePostId", () => {
 
     // Assert
     expect(result).toBe("9rrxcmhYH1V6qZx3j3");
+  });
+});
+
+describe("generateCorrectMarkdown", () => {
+  it("should add permalink", () => {
+    // Arrange
+    const title = "2022-02-23-this-is-wow";
+    const markdown = `---
+title: Just hack'n
+description: Nothing to see here
+---
+ 
+This is some text about some stuff that happened sometime ago`;
+
+    // Act
+    const result = generateCorrectMarkdown(title, markdown);
+
+    // Assert
+    expect(result).toBe(`---
+permalink: 9rrxcmhYH1V6qZx3j3
+title: Just hack'n
+description: Nothing to see here
+---
+ 
+This is some text about some stuff that happened sometime ago`);
   });
 });
