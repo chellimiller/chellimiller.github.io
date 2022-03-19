@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-<meta>
-{% include meta.html %}
-<title>{{ site.title }}</title>
-</head>
+{% include document/head.html %}
 
 <body>
-  <header>
-    <a class="title" href="/">{{ site.title }}</a>
-    {% include social.html %}
-  </header>
+  {% include layout/header.html %}
 
-  <main aria-label="Content">
+  <main class="site-content" aria-label="Content">
     {{ content }}
   </main>
 
-  <footer>
-    {% include credits.html %}
-  </footer>
-
-  {% include deferred.html %}
+  {% include layout/footer.html %}
+  {% include document/deferred.html %}
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+{% if site.content.links.size > 0 %}
+<nav class="site-navigation">
+
+  {% for link in site.content.links %}
+
+  {% include link.html url='{{ link.url }}'' icon='{{ link.icon }}' label='{{ link.label }}' %}
+
+  {% endfor %}
+</nav>
+{% endif %}

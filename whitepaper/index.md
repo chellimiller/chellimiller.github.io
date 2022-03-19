@@ -1,9 +1,9 @@
 ---
-permalink: /blog
+permalink: /whitepapers
 type: pages
 ---
 
-# Blog
+# Whitepapers
 
 {% for post in site.posts %}
 

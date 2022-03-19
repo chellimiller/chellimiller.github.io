@@ -26,15 +26,23 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Content
 content:
-  ## Social media links
+  links:
+    - label: Whitepapers
+      url: /whitepapers
+      icon: /assets/icons/collection.svg
   social:
-    blog: /blog
-    github: https://github.com/chellimiller/
-    linkedin: https://www.linkedin.com/in/chellicmiller/
-    stackoverflow: https://stackoverflow.com/users/6832300/michelle-miller
-    codesignal: https://app.codesignal.com/profile/chelli_m
-    instructables: https://www.instructables.com/member/chellicmiller/
-    freelancer: https://www.freelancer.com/u/ChelliMiller
+    - label: Github
+      url: https://github.com/chellimiller/
+      icon: /assets/icons/github.svg
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/chellicmiller/
+      icon: /assets/icons/linkedin.svg
+    - label: Stackoverflow
+      url: https://stackoverflow.com/users/6832300/michelle-miller
+      icon: /assets/icons/stack-overflow.svg
+    # codesignal: https://app.codesignal.com/profile/chelli_m
+    # instructables: https://www.instructables.com/member/chellicmiller/
+    # freelancer: https://www.freelancer.com/u/ChelliMiller
   about:
     image:
       url: /assets/img/self-profile.png
@@ -47,16 +55,18 @@ content:
 
 defaults:
   - scope:
-      path: "blog"
+      path: "whitepaper"
       type: "posts"
     values:
       permalink: /:categories/:slug
-      layout: blog-post
+      layout: post
+      site-title: Michelle Miller
+      meta-title: Whitepaper :title
   - scope:
-      path: "blog"
+      path: "whitepaper"
       type: "pages"
     values:
-      layout: blog-page
+      layout: page
 
 # Build settings
 plugins:
