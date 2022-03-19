@@ -3,7 +3,7 @@ const {POST_DATE, NON_ALPHANUMERIC} = require("./regex");
 const Hashids = require("hashids/cjs");
 const fm = require("front-matter");
 
-const hashids = new Hashids();
+const hashids = new Hashids("permalinks");
 
 /**
  * Parse the title of the post to exclude date,
@@ -52,7 +52,10 @@ function parseDate(postTitle) {
  * @returns {number}
  */
 function toNumberish(randomString) {
-  return Number.parseInt(randomString.replace(NON_ALPHANUMERIC, ""), 36);
+  return (
+    Number.parseInt(randomString.replace(NON_ALPHANUMERIC, ""), 36) %
+    99999999999999
+  );
 }
 
 /**
@@ -65,7 +68,13 @@ function generatePostId(postTitle) {
   const {year, month, day} = parseDate(postTitle);
   const title = toNumberish(parseTitle(postTitle));
 
-  return hashids.encode([year, month, day, title]);
+  return [
+    hashids.encode(title).slice(0, 7),
+    hashids.encode(year),
+    hashids.encode(month),
+    hashids.encode(day),
+  ].join("");
+  // return hashids.encode(year, month, day, title);
 }
 
 /**

@@ -65,7 +65,17 @@ describe("generatePostId", () => {
     const result = generatePostId(postTitle);
 
     // Assert
-    expect(result).toBe("9rrxcmhYH1V6qZx3j3");
+    expect(result).toBe("Q7LkbzYbLLO7Ygr");
+  });
+  it("should convert similar post titles differently", () => {
+    // Arrange
+    const postTitle = "2022-02-23-this-is-it-yo-wow";
+
+    // Act
+    const result = generatePostId(postTitle);
+
+    // Assert
+    expect(result).toBe("GYpDOqAbLLO7Ygr");
   });
 });
 
@@ -85,7 +95,7 @@ This is some text about some stuff that happened sometime ago`;
 
     // Assert
     expect(result).toBe(`---
-permalink: 9rrxcmhYH1V6qZx3j3
+permalink: /articles/Q7LkbzYbLLO7Ygr/
 title: Just hack'n
 description: Nothing to see here
 ---
