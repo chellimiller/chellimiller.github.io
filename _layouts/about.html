@@ -3,13 +3,11 @@ layout: default
 ---
 
 <article class="about">
-  {% unless site.content.about.image.url == blank %}
-  <section class="image">
+  <div class="overview">
+    {% unless site.content.about.image.url == blank %}
     <img src="{{ site.content.about.image.url }}" alt="{{ site.content.about.image.alt }}" />
-  </section>
-  {% endunless %}
+    {% endunless %}
 
-  <section class="content">
     {% if page.title and page.title.size > 0 %}
     <h1>
       {{ page.title }}
@@ -19,7 +17,9 @@ layout: default
       {{ site.content.about.title }}
     </h1>
     {% endif %}
+  </div>
 
+  <div class="content">
     {% if page.content and page.content.size > 0 %}
     {% for content in page.content %}
     {{ content }}
@@ -27,5 +27,5 @@ layout: default
     {% else %}
     <p>{{ site.content.about.content }}</p>
     {% endif %}
-  </section>
+  </div>
 </article>
