@@ -1,3 +1,10 @@
-<section class="site-credits">
-  <a href="https://www.linkedin.com/in/noah-miller-482404142/">Photography by Noah J Miller</a>
-</section>
+{% if site.content.credits.size > 0 %}
+<details class="site-credits">
+  <summary>Credits</summary>
+  <ul>
+    {% for credit in site.content.credits %}
+    <li><a href="{{ credit[1].url }}">{{ credit[1].label }}</a></li>
+    {% endfor %}
+  </ul>
+</details>
+{% endif %}

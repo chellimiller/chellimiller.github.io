@@ -35,6 +35,20 @@ content:
     codesignal: https://app.codesignal.com/profile/chelli_m
     instructables: https://www.instructables.com/member/chellicmiller/
     freelancer: https://www.freelancer.com/u/ChelliMiller
+  credits:
+    photos:
+      label: "Photography: Noah J Miller"
+      url: https://www.linkedin.com/in/noah-miller-482404142/
+    cssreset:
+      label: "CSS Reset: Normalize CSS"
+      url: https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css
+    icons:
+      label: "Icons: Feather Icons"
+      url: https://feathericons.com/
+    fonts:
+      label: "Font: Roboto"
+      url: https://fonts.google.com/specimen/Roboto
+
   about:
     image:
       url: /assets/img/self-profile.png
