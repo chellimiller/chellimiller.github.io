@@ -41,9 +41,9 @@ content:
       alt: It's me!
     title: Hello, I'm Michelle
     content: >-
-      I'm a software engineer living in Phoenix, Arizona.
-      In my free time, I'm often working on personal projects or doing home repairs.
-      I'm a huge fan of Star Wars and bad TV shows.
+      I'm a software engineer living in Tempe, Arizona.
+      I specialize in TypeScript, React, automated testing, accessibility, and fullstack software development.
+      I'm deeply committed to continuous learning and writing high-quality software.
 
 # Build settings
 plugins:
