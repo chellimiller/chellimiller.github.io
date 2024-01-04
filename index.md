@@ -3,24 +3,22 @@ layout: about
 ---
 
 <p>
-I'm a software engineer based in Tempe, Arizona with a focus in TypeScript, React, and backend development.
-I'm passionate about learning and finding better ways to write maintainable, user-friendly software.
-My journey has led me to appreciate the importance of automated testing, accessibility, and thoughtful, maintainable code.
+I'm a software engineer from Tempe, Arizona, specializing in TypeScript, React, and backend development.
 </p>
 
 <p>
-In my experience, quality code not only makes development smoother but also results in faster delivery.
-I'm a fan of automated testing and solid CI/CD practices because they help my team and I work more effectively.
-Seeing the impact that a collaborative, well-functioning team makes is an incredibly rewarding experience.
+I'm dedicated to writing high-quality, maintainable code,
+with a strong belief in automated testing and best practices to enhance efficiency and reliability.
+Accessibility in software is one of my core values.
 </p>
 
 <p>
-I believe software should be accessible to everyone.
-My experiences with people who have diverse accessibility needs have made me more aware and committed to inclusive design.
-It's about making sure everyone can benefit from the technology we build.
+Team dynamics is something I'm passionate about, since the team's culture drives results more than anything else.
+It's rewarding to work alongside collaborative, driven individuals,
+with each of us bringing our own unique skills and perspectives to the table.
 </p>
 
 <p>
-If you're interested in discussing tech, software development, or sharing ideas, feel free to connect with me on LinkedIn.
+Reach out on LinkedIn if you're interested in discussing tech or exchanging ideas.
 I'm always eager to learn from others and share what I've picked up along the way!
 </p>
