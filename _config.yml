@@ -35,15 +35,29 @@ content:
     codesignal: https://app.codesignal.com/profile/chelli_m
     instructables: https://www.instructables.com/member/chellicmiller/
     freelancer: https://www.freelancer.com/u/ChelliMiller
+  credits:
+    photos:
+      label: "Photography: Noah J Miller"
+      url: https://www.linkedin.com/in/noah-miller-482404142/
+    cssreset:
+      label: "CSS Reset: Normalize CSS"
+      url: https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css
+    icons:
+      label: "Icons: Feather Icons"
+      url: https://feathericons.com/
+    fonts:
+      label: "Font: Roboto"
+      url: https://fonts.google.com/specimen/Roboto
+
   about:
     image:
       url: /assets/img/self-profile.png
       alt: It's me!
     title: Hello, I'm Michelle
     content: >-
-      I'm a software engineer living in Phoenix, Arizona.
-      In my free time, I'm often working on personal projects or doing home repairs.
-      I'm a huge fan of Star Wars and bad TV shows.
+      I'm a software engineer living in Tempe, Arizona.
+      I specialize in TypeScript, React, automated testing, accessibility, and fullstack software development.
+      I'm deeply committed to continuous learning and writing high-quality software.
 
 # Build settings
 plugins:
